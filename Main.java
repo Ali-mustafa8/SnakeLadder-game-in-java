@@ -32,7 +32,6 @@ public class Main {
                 int playerPosition[] = new int[2];
                 playerPosition[0] = 0;
                 playerPosition[1] = 0;
-                //========================================================================================================================//
                 int firstone=0;//this is decide about who start first<have brought this idea from internet>
                 int firstone1=1;//this is decide who start first
                 System.out.println(" entire your name: ");
@@ -46,7 +45,6 @@ public class Main {
                     playerNames[1] = "player2";
                 System.out.println(" second player name is-------------> " + playerNames[1]+"\n");
                 System.out.println("the game is between---> ( "+playerNames[0]+" <=========> "+playerNames[1]+")\n\n");
-                //======================================================================================================//
                 boolean enter = true;
                 String gobyenntire;
                 while (enter == true) {
@@ -71,7 +69,6 @@ public class Main {
                         firstone1=0;
                         break;
                     }
-//===========================================================================================================//
                 }
                 System.out.println("Let's start the game...\n");
                 boolean in = true;
@@ -120,11 +117,9 @@ public class Main {
                         winner = playerNames[thisplayer];
                         break;
                     }
-//===============================================================================================================//
                     playerPosition[thisplayer] = (total + board[total]);
                     // the value of the total goes inside the board
                     System.out.println(playerNames[thisplayer] + ", you have moved from square " + oldPosition + " and are now on square " + playerPosition[thisplayer]+"\n" );
-                    //===============================================================================//
                     thisplayer =firstone1;
                     System.out.println(playerNames[thisplayer] + ", you are on square " + playerPosition[thisplayer] + ", press 'ENTER' to roll the dice...");
                     gobyenntire = input.nextLine();
@@ -165,12 +160,10 @@ public class Main {
                         winner = playerNames[thisplayer];
                         break;
                     }
-                    //================================================================================//
                     playerPosition[thisplayer] = (total + board[total]);
                     System.out.println(playerNames[thisplayer] + ", you have moved from square " + oldPosition + "and are now on square " + playerPosition[thisplayer]);
                 }
                 System.out.println("Congratulations " + winner + " you have won the game!");
-//===========================================================================================================//
             }
             private static int throwTheDice () {
                 Random rand = new Random();
